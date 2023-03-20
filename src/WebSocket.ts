@@ -131,6 +131,11 @@ export class WebSocket extends EventTarget<WebSocketEventMap>
 		return this.connection_.bytesWaitingToFlush;
 	}
 
+	public set binaryType(value: string)
+	{
+		// do nothing
+	}
+
 	public get binaryType(): string
 	{
 		return "arraybuffer";
